@@ -85,25 +85,5 @@ occur:
 </p>
 </div>
 
-<c:url value="/game/new" var="newGamePage" />
-<div class="action-button">
-<a href="${newGamePage}">New Game</a>
-</div>
-
-<%
-	InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream("/system.properties");
-	Properties prop = new Properties();  
-	String appVersion = "";
-	if ( inputStream != null ) {  
-		try {  
-			prop.load(inputStream);  
-			appVersion = prop.getProperty("app.version");  
-		}  
-		catch ( IOException ioe ) {  
-			ioe.printStackTrace();  
-		}  
-	}  
-%>
-<div class="footer">Game Of Life version <%=appVersion%></div>
 </body>
 </html>
