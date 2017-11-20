@@ -14,7 +14,7 @@ before_each "assume that the application is running", {
 		homePage = new HomePage(new HtmlUnitDriver())		
 	}
 	and "that the user is on the home page", {
-		homePage.open "http://localhost:9090/"
+		homePage.open "http://localhost:35654/"
 	}
 }
 
@@ -46,7 +46,7 @@ scenario "The user can seed the universe with an initial grid",{
 
 /*scenario "An empty grid should produce an empty grid",{
     given "that the user is on the home page", {
-		homePage.open("http://localhost:9090/");
+		homePage.open("http://localhost:35654/");
 	}
 	when "the user chooses to start a new game", {
 		homePage.clickOnNewGameLink()

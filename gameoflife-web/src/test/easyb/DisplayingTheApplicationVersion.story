@@ -17,7 +17,7 @@ scenario "Application version number is displayed on the home page",{
 		homePage = new HomePage(new HtmlUnitDriver())         
 	}
 	and "that the user is on the home page", {
-		homePage.open("http://localhost:9090/");
+		homePage.open("http://localhost:35654/");
 	}
 	then "the current application version number should be displayed", {
 		homePage.text.shouldHave "Game Of Life version "

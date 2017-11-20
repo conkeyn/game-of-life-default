@@ -13,7 +13,7 @@ before_each "assume that the user has seeded the universe", {
 		homePage = new HomePage(new HtmlUnitDriver())         
 	}
 	and "that the user has opened the 'new game' page", {
-		homePage.open("http://localhost:9090/");
+		homePage.open("http://localhost:35654/");
 		newGridPage = homePage.clickOnNewGameLink()
 	}
 }

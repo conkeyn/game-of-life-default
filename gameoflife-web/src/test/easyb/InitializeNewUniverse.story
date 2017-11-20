@@ -16,7 +16,7 @@ before_each "assume that the application is running", {
 
 scenario "The user can seed the universe with an initial grid",{
     given "that the user is on the home page", {
-		homePage.open("http://localhost:9090/");
+		homePage.open("http://localhost:35654/");
 	}
 	when "the user chooses to start a new game", {
 		homePage.clickOnNewGameLink()
@@ -28,7 +28,7 @@ scenario "The user can seed the universe with an initial grid",{
 
 scenario "The user can seed the universe with an initial grid",{
 	given "that the user has opened the 'new game' page", {
-		homePage.open("http://localhost:9090/");
+		homePage.open("http://localhost:35654/");
 		newGridPage = homePage.clickOnNewGameLink()
 	}
 	when "the user clicks on the 'Go' button", {
@@ -45,7 +45,7 @@ scenario "The user can seed the universe with an initial grid",{
 
 scenario "The user can seed the universe with an initial grid",{
 	given "that the user has opened the 'new game' page", {
-		homePage.open("http://localhost:9090/");
+		homePage.open("http://localhost:35654/");
 		newGridPage = homePage.clickOnNewGameLink()
 	}
 	when "the user enters a simple set of living cells", {

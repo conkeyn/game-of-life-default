@@ -254,7 +254,7 @@
 		</dependency>
 	</dependencies>
 	<properties>
-		<jetty.port>9090</jetty.port>
-		<webtest_home>http://localhost:9090</webtest_home>
+		<jetty.port>35654</jetty.port>
+		<webtest_home>http://localhost:35654</webtest_home>
 	</properties>
 </project>
